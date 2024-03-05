@@ -74,19 +74,19 @@ def question2():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "As shown in figure, clusters are too far away from centroid to attract points from other."
+    answers["(a) explain"] = "The figure shows that clusters are too distant from the centroid to pull points from others."
 
     # type: bool (True/False)
     answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Since the shaded regions are close to each other, as shown in figure, the clusters will have points from both of the shaded regions."
+    answers["(b) explain"] = "The figure indicates that because the shaded areas are near each other, the clusters will include points from both areas."
 
     # type: bool (True/False)
     answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "The 12.5 centroid is far away from all points and all other clusters will become empty."
+    answers["(c) explain"] = "The centroid at 12.5 is too distant from all points, leaving all other clusters empty."
 
     return answers
 
@@ -125,8 +125,8 @@ def question4():
     answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Due to the equal number of distance and points(100 points) in A and B, 1 centroid will be attracted towrds the A. The right side of B(2/3rd portion) now has the 2 centroids. Circle C has more points (100,000 points) and is equally placed to B, it guarantees to hold a centroid due to the stronger pull, despite the initial absence. Even distribution of points in A and B means each should attract a centroid due to their similar pull."
-
+    answers["(a) explain"] = "Since A and B each have 100 points at equal distances, one centroid will move towards A. The right side of B, with two-thirds of it, will have two centroids. Circle C, with 100,000 points and equally close to B, will definitely attract a centroid because of its stronger pull, even if it didn't initially. The even distribution of points in A and B means they should each get a centroid due to their similar attraction."
+    
     # type: int
     answers["(b) Circle (a)"] = 1
 
@@ -137,7 +137,7 @@ def question4():
     answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "The centroid will stay at A due to the existing points in A and absence of stronger pull. Stronger pull from C will attract one centroid from B. Thus all the three circles will have 1, 1, 1 centroids."
+    answers["(b) explain"] = "The centroid will remain at A because of its points and no stronger pull elsewhere. C's strong pull will draw one centroid from B, so each of the three circles will end up with one centroid each."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -149,8 +149,8 @@ def question4():
     answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "Because circles A and B are close together but far apart from circle C, the points from both will be assigned to the centroid in A. The points in C will be divided between two centroids, each with 50,000 points.   Because A and B have the same number of points, the centroid in A will move between the two. The centroids in C will move apart slightly, but they will still be in C, with half of the points."
-
+    answers["(c) explain"] = "Since A and B are near each other and far from C, their points will go to A's centroid. C's points will split between two centroids, each getting 50,000 points. With A and B having equal points, their centroid will shift between them. The centroids in C will spread out a bit but remain in C, each holding half the points."
+    
     return answers
 
 
