@@ -11,56 +11,56 @@ def question1():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Agglomerative hierarchical clsutering builds clusters stey by step by merging or splitting based on distance metrics and k-means assigns points to the nearest cluster center, potentially skewing results if outliers are present. "
+    answers["(a) explain"] = "Agglomerative hierarchical clustering creates clusters gradually by merging or splitting them according to distance measures. K-means clustering assigns points to the closest cluster center, which can bias the results if there are outliers."
 
     # type: bool (True/False)
     answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "K-means is randomness in initial centroids which leads to different results.Where as Agglomerative hierarchical clsutering is deterministic which leads to same result every time. "
-
+    answers["(b) explain"] = "K-means clustering can give different outcomes due to random starting points, while Agglomerative hierarchical clustering consistently gives the same result because it follows a set process."
+    
     # type: bool (True/False)
     answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "Though K-means take less time and memory than agglomerative hierarchical clustering and is the most effcient clustering algorithm possible., there are more algorithims possible for example the leader algorithim. "
-
+    answers["(c) explain"] = "K-means is faster and uses less memory than agglomerative hierarchical clustering, making it a very efficient clustering method. However, other algorithms like the leader algorithm also exist."
+    
     # type: bool (True/False)
     answers["(d)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = "Splitting decreases sum of squared errors as we have two centroids for same set, which effect into the reduction of distance to nearest centroids."
-
+    answers["(d) explain"] = "Splitting into two clusters reduces errors by having two centers, which shortens the distance to the nearest center."
+    
     # type: bool (True/False)
     answers["(e)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = "Sum of squared errors(SSE) is an inverse measure of the coheasion of clusters, thus SSE decreases and cohesion increases, vice-versa is also true."
+    answers["(e) explain"] = "Sum of squared errors (SSE) shows how tight clusters are: lower SSE means tighter clusters, and vice versa."
 
     # type: bool (True/False)
     answers["(f)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(f) explain"] = "For k-means, the sum of squares between(SSB) is the measure of separation of clusters. Therefore SSB increases, seperation increases, vice-versa is also true"
-
+    answers["(f) explain"] = "For k-means, the sum of squares between (SSB) indicates how separate the clusters are: higher SSB means more separation, and the opposite is also true."
+    
     # type: bool (True/False)
     answers["(g)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(g) explain"] = "k-means is independent for cohesion and seperation that means improving cohesion doesn't necessary improve seperation"
+    answers["(g) explain"] = "In k-means, making clusters tighter (cohesion) doesn't automatically mean they're more spread out (separation)."
 
     # type: bool (True/False)
     answers["(h)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = "The total sum of squares (TSS) is sum of SSE and the between SSB as per the k-means.Also TSS is constant during the k-means clustering process."
+    answers["(h) explain"] = "In k-means, the total sum of squares (TSS) is the sum of SSE and SSB, and remains constant throughout the clustering process."
 
     # type: bool (True/False)
     answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "SSB is measure of cluster seperation and SSE is inverse measure of cluster cohesion. Thus cohesion increasion, SSE decreases and seperation(SSB) increases."
-
+    answers["(i) explain"] ="SSB measures how far apart clusters are, and SSE shows how tight a cluster is. So, as clusters get tighter (more cohesive), SSE goes down and SSB goes up."
+    
     return answers
 
 
