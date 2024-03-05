@@ -164,14 +164,14 @@ def question5():
     answers["(a)"] = {'Group A', 'Group B'}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Group A and B can be merged since the rightmost point of A and leftmost point of B has the smallest single link distance."
+    answers["(a) explain"] = "A and B can be combined because the nearest point in A to the nearest point in B has the shortest distance between them."
 
     # type: set
     answers["(b)"] = {'Group A', 'Group C'}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ".Group A and C can be merged since the rightmost point of A and farthest point of C has the smallest complete link distance."
-
+    answers["(b) explain"] = "A and C can be joined because the farthest point in A to the farthest point in C is the shortest distance for a complete link."
+    
     return answers
 
 
@@ -236,13 +236,13 @@ def question7():
     answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Cluster 4 has highest entropy due to more even distribution of categories."
+    answers["(a) explain"] = "Cluster 4 is most mixed, with an even spread of categories, giving it the highest entropy."
 
     # type: string
     answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Cluster 1 has low entropy due to the unequal distribution.The vast majority of its data points fall into a single category, making it highly homogeneous." 
+    answers["(b) explain"] = "Cluster 1 has low entropy because most of its points are in one category, making it very uniform." 
     return answers
 
 
@@ -256,29 +256,29 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = "Two diagonal entries are more blue and crisp than the other two, indicating that two clusters (B and C) have higher cohesion than the other two (A and D)."
+    answers["(a) explain diag entries, Matrix 1"] = "Two diagonal entries are bluer and clearer, showing that clusters B and C are tighter than A and D."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = "The first and third rows correspond to clusters A and C. This is because the colors of the off-diagonal entries for these two rows are all different, indicating the different distances between clusters A (or C) and all other clusters (i.e., A is closest to C (blue off-diagonal), followed by B (green off-diagonal), and is the furthest from D (yellow off-diagonal); similar explanation for C). Row 2 corresponds to cluster B. Distances to A and C are the same (green off-diagonal), and the furthest distance from A is the red one. Row 4 corresponds to cluster D. Distances from A and C are the same (yellow off-diagonal), but the furthest distance from B is red off-diagonal."
-
+    answers["(a) explain non-diag entries, Matrix 1"] = "The first and third rows match clusters A and C because their off-diagonal colors vary, showing different distances to all other clusters. A is closest to C, then B, and farthest from D; C follows a similar pattern. The second row is for cluster B, equidistant to A and C (green), with the greatest distance being red. The fourth row is for D, equally far from A and C (yellow), with the farthest distance from B shown in red."
+    
     # type: string
     answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = "Two diagonal entries are more blue and crisp compared to the other two,  indicating two clusters have better cohesion (B and C) than the other  two (A and D)"
-
+    answers["(a) explain diag entries, Matrix 2"] = "Two diagonal entries are bluer and clearer than the others, showing that clusters B and C are tighter than A and D."
+    
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = "1. Rows with less crisp diagonal entries (rows 1 and 4) have all  different colors, indicating that all other clusters have different  distances from these clusters (e.g: Cluster A is the nearest to B,  followed by C and then D, no 2 clusters have same distance to cluster A).  2. Rows with more crisp diagonal entries have 2 same colors (other than  the diagonal), indicating that it has same distance to 2 clusters,  and is the furthest from 1 cluster (e.g: B’s distance to A and C is  similar, but is the furtherst from D)."
-
+    answers["(a) explain non-diag entries, Matrix 2"] = "1. Rows 1 and 4, with fuzzier diagonals, show different colors, meaning each cluster is a unique distance away (e.g., Cluster A is closest to B, then C, and farthest from D, with no two clusters at the same distance from A). 2. Rows with clearer diagonals show two identical colors (aside from the diagonal), indicating equal distance to two clusters and the greatest distance from another (e.g., B is equally distant from A and C but farthest from D)."
+    
     # type: string
     answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = "Two diagonal entries are more blue and crisp compared to the other two,  indicating two clusters have better cohesion (B and C) than the other  two (A and D)."
-
+    answers["(a) explain diag entries, Matrix 3"] = "Two diagonal entries are bluer and sharper, showing clusters B and C are tighter than A and D."
+    
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = "All rows have two similar and 1 different colors off diagonals entries.  This indicates each cluster has two other clusters relatively closer  to it than the remaining 1 cluster (e.g: B is similarly close to A and  C compared to with D."
-
+    answers["(a) explain non-diag entries, Matrix 3"] = "All rows show two similar and one different off-diagonal colors, meaning each cluster is closer to two others and farther from one (e.g., B is equally close to A and C, but farther from D)."
+    
     # type: string
     answers["(b) Row 1"] = "Cluster A"
 
@@ -292,16 +292,17 @@ def question8():
     answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = "Diagonal entry is less crisp, meaning the cluster is less cohesive.  All off- diagonal entries have different colors, indicating all  other clusters have different distances from is (closest to B,  followed by C, and furthest from A)."
-
+    answers["(b) Row 1 explain"] = "A less sharp diagonal entry means the cluster is not very tight. Different colors in off-diagonal entries show varying distances to other clusters (nearest to B, then C, and farthest from A)."
+    
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = "Diagonal entry is more crisp, indicating the cluster is cohesive.  2/3 off-diagonal entries have the same color, indicating 2 other  clusters are closer to it (A and C, eventhough the off-diagonal  indicating distances with A is less crisp), and is the furthest  from 1 other cluster (D)."
-
+    answers["(b) Row 2 explain"] = "A sharper diagonal entry shows the cluster is tight. Two out of three off-diagonal entries matching in color mean it's closer to two clusters (A and C, despite fuzzier lines with A) and farthest from another (D)."
+    
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = "Diagonal entry is more pronounced, indicating that the cluster is cohesive.  Two-thirds of the off-diagonal entries have the same color, indicating that two other clusters are closer to it (A and C, despite the fact that the off-diagonal indicating distances with A is less crisp), and it is the furthest from one other cluster (D)."
-
+    answers["(b) Row 3 explain"] = "A clearer diagonal entry suggests the cluster is cohesive. Two of the off-diagonal entries being the same color means it's closer to two clusters (A and C, even if the line with A is less clear) and farthest from another (D)."
+    
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = "The cluster is nearest to A, then to C, and farthest from B, and it's more tightly-knit, shown by the different colors for each distance"
+    answers["(b) Row 4 explain"] = "The cluster is closest to A, next closest to C, and farthest from B, with its tightness indicated by the varying colors for each distance."
+    
     return answers
 
 
@@ -328,8 +329,8 @@ def question9():
     answers["(e)"] = ['Partitional', 'Exclusive', 'Complete']
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = "Letter grades are distinct categories that do not overlap (exclusive), each student receives only one grade per class (exclusive), and all students in the class will receive a grade (complete)."
-
+    answers["(e) explain"] = "Letter grades are unique, non-overlapping categories, with each student getting one grade per class, ensuring every student gets a grade."
+    
     return answers
 
 
@@ -346,8 +347,8 @@ def question10():
     answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "DBSCAN can work only for (b) because in (b) the points in the nose,  eyes, and mouth are much closer together than the points between  these areas, and DBSCAN could distinguish these areas. For (a),  the noise is much denser than the interest patterns, so the nose,  eyes, and mouth will be eliminated by DBSCAN."
-
+    answers["(a) explain"] = "DBSCAN suits (b) since the points in the nose, eyes, and mouth are closer together, allowing it to identify these areas. In (a), dense noise overpowers the patterns, causing DBSCAN to miss the nose, eyes, and mouth."
+    
     # type: string
     answers["(b) Figure (a)"] = "No"
 
@@ -355,11 +356,11 @@ def question10():
     answers["(b) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "K-means can work for (b) as long as the number of clusters  was set to 4, although the lower density points would also  be included. K-means does not work for (a)."
-
+    answers["(b) explain"] = "K-means fits (b) if set to 4 clusters, including sparse points, but fails for (a)."
+    
     # type: string
-    answers["(c)"] = "Consider reciprocal of density as the next density and run DBSCAN on it."
-
+    answers["(c)"] = "Use the inverse of density as the new density measure for running DBSCAN."
+    
     return answers
 
 # --------------------------------------------------------
